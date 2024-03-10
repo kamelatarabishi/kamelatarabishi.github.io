@@ -1,0 +1,23 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+<MainLayout title="Projects | Kamela Tarabishi">
+  <div class="container">
+    <section class="projects-col" >
+      <img src="/imgs/1.webp" alt="" class="img-fluid">
+      <img src="/imgs/2.webp" alt="" class="img-fluid">
+      <img src="/imgs/3.webp" alt="" class="img-fluid">
+    </section>
+  </div>
+</MainLayout>
+
+<style>
+  .projects-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+  }
+</style>

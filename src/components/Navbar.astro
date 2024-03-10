@@ -1,0 +1,56 @@
+---
+
+---
+<nav class="navbar container">
+  <a class="brand-link" href="/">
+    <h1 id="brand">Kamela Tarabishi</h1>
+  </a>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="nav-link" href="/projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="/resume">Resume</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand-link {
+    color: #000;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: dotted underline;
+    }
+  }
+  .nav-link {
+    font-size: 1.3rem;
+    letter-spacing: 1.1px;
+  }
+  @media screen and (max-width: 600px) {
+    * {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      padding-inline: 0;
+      width: 100%;
+    }
+  }
+</style>
